@@ -14,8 +14,9 @@ Here you will find an actual working app to test the solutions for task 2 in `da
 
 - Run `npm i` to install the packages required.
 - Make sure to create a `.env` file with `MONGODB_CONNECTION_URI` and set the value to the database connection URI (`mongodb+srv://<username>:<password>@cluster0.7oztt.mongodb.net/<database-name>?retryWrites=true&w=majority`)
+- Be sure to update the third argument on line 10 in `app/db-connect.js`. That represent the actual name of the collection in database which Mongoose will reference with the `File` model.
 - Run `node app/db-seed.js` to seed the database with sample data. This will create files in the database with folders and sub folders.
-- In `app/main.js`, uncomment one `console.log` statements at a time and run `node app/main.js` to test the tasks in 2 one by one.
+- In `app/main.js`, uncomment one `console.log` statement at a time and run `node app/main.js` to test the tasks in 2 one by one.
 
 ## Roadblocks
 
